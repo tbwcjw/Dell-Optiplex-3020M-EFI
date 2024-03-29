@@ -64,7 +64,8 @@ Ensure the following BIOS settings are configured:
 2. AirportItlwm.kext is used for networking. It is macOS version specific. To suit your version, you can find compatible kexts [here](https://github.com/OpenIntelWireless/itlwm/releases). Remember to update `config.plist` with the new filename.
 3. Press spacebar within the OpenCore loader to show hidden options such as `Clear NVRAM`.
 4. To use iCloud, App Store, etc. You must first generate a new SMBIOS and update `config.plist` with the generated values (Refer to the image below). Make sure to generate SMBIOS for `iMac14,3`.
-5. When macOS installation is completed. Use a tool like [EFIAgent](https://github.com/benbaker76/EFI-Agent/releases) to mount the EFI partition to the EFI partition of your machine.
+5. For the 'ROM' line in the SMBIOS: Find your machines MAC address, remove the ':' delimiters and [encode](https://www.base64encoder.io/) in base64.
+6. When macOS installation is completed. Use a tool like [EFIAgent](https://github.com/benbaker76/EFI-Agent/releases) to mount the EFI partition to the EFI partition of your machine.
 
 ![config.plist smbios lines](https://raw.githubusercontent.com/tbwcjw/Dell-Optiplex-3020M-EFI/main/Images/smbios-config-lines.png)
 
