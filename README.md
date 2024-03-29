@@ -31,7 +31,7 @@ Ensure the following BIOS settings are configured:
 - **Power Management → Wake on LAN/WLAN:** Disabled
 - **Virtualization Support → Virtualization:** Enabled
 
-## Important
+## Important BIOS settings
 
 1. Download [modGRUBShell](https://github.com/datasone/grub-mod-setup_var/releases) and place it in the `EFI/OC/Tools` folder. Add it to the `Misc → Tools` section of `config.plist`.
 2. Boot into OpenCore and select the `modGRUBShell` option.
